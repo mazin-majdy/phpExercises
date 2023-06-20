@@ -5,7 +5,7 @@
 
 function fact($n)
 {
-  if($n > 0){
+  if ($n > 0) {
     $result = 1;
     for ($i = $n; $i > 0; $i--) {
       $result *= $i;
@@ -15,8 +15,19 @@ function fact($n)
   } else {
     echo 'Negative numbers are invalid <br>';
   }
-
 }
 
 fact(4);
 fact(-2);
+
+// Second Solution With Recursive Function.
+function factorial($n)
+{
+  if ($n < 0)
+    return -1; 
+  if ($n == 0)
+    return 1; 
+  return ($n * factorial($n - 1));
+}
+
+echo factorial(4);
