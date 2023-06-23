@@ -2,8 +2,16 @@
 
 namespace Classes\Manager;
 
-use Traits\Store\Store;
 use Classes\Student\Student;
+trait Store
+{
+  public function log(string $msg): void
+  {
+    $logFile = fopen('log.txt', 'a');
+    fwrite($logFile, $msg . PHP_EOL);
+    fclose($logFile);
+  }
+}
 
 class Manager
 {
@@ -29,7 +37,7 @@ class Manager
     $this->log('Updated Student: ' . $student->name);
   }
 
-  public function deleteStudent(Student $student, string $Id): void
+  public function deleteStudent(Student $student): void
   {
     $studentId = $student->getID();
     unset($this->students[$studentId]);

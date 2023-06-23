@@ -4,6 +4,7 @@ use Classes\Student\Student;
 use Classes\Courses\Courses;
 use Classes\Manager\Manager;
 include('./Classes/Manager.php');
+include('./Classes/Student.php');
 
 $manager = new Manager();
 
@@ -24,3 +25,5 @@ if ($retrievedStudent) {
 } else {
   echo "Student not found!" . PHP_EOL;
 }
+
+$manager->deleteStudent($std1);
