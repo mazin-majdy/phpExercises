@@ -3,9 +3,10 @@
 use Classes\Student\Student;
 use Classes\Courses\Courses;
 use Classes\Manager\Manager;
-include('./Classes/Manager.php');
-include('./Classes/Student.php');
+// include('./Classes/Manager.php');
+// include('./Classes/Student.php');
 
+include __DIR__ . '/autoload.php';
 $manager = new Manager();
 
 $std1 = new Student('Mazin Majdy', 'mazin@gmail.com');
@@ -26,4 +27,10 @@ if ($retrievedStudent) {
   echo "Student not found!" . PHP_EOL;
 }
 
+$std1->addCourse('Mobile');
+$std1->addCourse('Web');
+$std1->addCourse('Programming');
+
+print_r($std1->courses);
 $manager->deleteStudent($std1);
+echo '<br>';

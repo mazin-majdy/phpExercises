@@ -8,7 +8,7 @@ trait Store
   public function log(string $msg): void
   {
     $logFile = fopen('log.txt', 'a');
-    fwrite($logFile, $msg . PHP_EOL);
+    fwrite($logFile, '(' .date('l jS \of F Y h:i:s A') . ') => ' . $msg . PHP_EOL);
     fclose($logFile);
   }
 }
@@ -22,7 +22,7 @@ class Manager
   public function addStd(Student $student): void
   {
     $this->students[$student->getID()] = $student;
-    $this->log('Add student', ['name' => $student->name]);
+    $this->log('Add student: '. $student->name);
   }
 
   public function getStudentById(string $studentId): ?Student

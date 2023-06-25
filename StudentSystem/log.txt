@@ -1,5 +1,8 @@
-Add student
-Add student
-Add student
-Updated Student: Amal
-Deleted Student Mazin Majdy
+(Sunday 25th of June 2023 12:48:11 PM) => Add student: Mazin Majdy
+(Sunday 25th of June 2023 12:48:11 PM) => Add student: Hasan Mohammed
+(Sunday 25th of June 2023 12:48:11 PM) => Add student: Maha Ehab
+(Sunday 25th of June 2023 12:48:11 PM) => Updated Student: Amal
+(Sunday 25th of June 2023 12:48:11 PM) => Mobile Was Registered
+(Sunday 25th of June 2023 12:48:11 PM) => Web Was Registered
+(Sunday 25th of June 2023 12:48:11 PM) => Programming Was Registered
+(Sunday 25th of June 2023 12:48:11 PM) => Deleted Student Mazin Majdy

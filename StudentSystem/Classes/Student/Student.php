@@ -1,9 +1,11 @@
 <?php
 
 namespace Classes\Student;
+use Classes\Manager\Store;
 
 class Student
 {
+  use Store;
   private readonly string $id;
   public $name;
   public $email;
@@ -26,5 +28,6 @@ class Student
   public function addCourse($course)
   {
     $this->courses[] = $course;
+    $this->log("$course Was Registered");
   }
 }
