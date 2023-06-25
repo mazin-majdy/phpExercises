@@ -6,11 +6,11 @@
 function check($str)
 {
 
-    if(($str[strlen($str) - 1] == $str[1]) && ($str[strlen($str) - 2] == $str[0])) {
-      echo "Yes it's Identical <br>";
-    } else {
-      echo "Doesn't Identical <br>";
-    }
+  if (($str[strlen($str) - 1] == $str[1]) && ($str[strlen($str) - 2] == $str[0])) {
+    echo "Yes it's Identical <br>";
+  } else {
+    echo "Doesn't Identical <br>";
+  }
 }
 
 check("miami");
