@@ -6,3 +6,11 @@
 (Sunday 25th of June 2023 12:48:11 PM) => Web Was Registered
 (Sunday 25th of June 2023 12:48:11 PM) => Programming Was Registered
 (Sunday 25th of June 2023 12:48:11 PM) => Deleted Student Mazin Majdy
+(Monday 3rd of July 2023 11:16:25 PM) => Add student: Mazin Majdy
+(Monday 3rd of July 2023 11:16:25 PM) => Add student: Hasan Mohammed
+(Monday 3rd of July 2023 11:16:25 PM) => Add student: Maha Ehab
+(Monday 3rd of July 2023 11:16:25 PM) => Updated Student: Amal
+(Monday 3rd of July 2023 11:16:25 PM) => Mobile Was Registered
+(Monday 3rd of July 2023 11:16:25 PM) => Web Was Registered
+(Monday 3rd of July 2023 11:16:25 PM) => Programming Was Registered
+(Monday 3rd of July 2023 11:16:25 PM) => Deleted Student Mazin Majdy

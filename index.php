@@ -2,7 +2,8 @@
 $exercises = [
   [1, 'PHP Basics', 'Task1', ['ex1.php', 'ex2.php', 'ex3.php', 'ex4.php', 'ex5.php', 'ex6.php', 'ex7.php', 'ex8.php', 'ex9.php']],
   [2, 'PHP Arrays And Functions', 'Task2', ['ex1.php', 'ex2.php', 'ex3.php', 'ex4.php', 'ex5.php']],
-  [3, 'PHP Classes And Objects ', 'StudentSystem', ['Demonstration.php']]
+  [3, 'PHP Classes And Objects', 'StudentSystem', ['Demonstration.php']],
+  [4, 'Create a draft of all required migration files', '', []],
 ];
 ?>
 
@@ -21,13 +22,13 @@ $exercises = [
 
 <body onload="myScript()">
 
-      <!-- Start Header -->
-      <div class="header" id="header">
-        <div class="container">
-            <a href="#" class="logo">Mazin Al-Maswaby</a>
-        </div>
+  <!-- Start Header -->
+  <div class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">Mazin Al-Maswaby</a>
     </div>
-    <!-- End Header -->
+  </div>
+  <!-- End Header -->
 
 
   <!-- Start Landing -->
@@ -71,15 +72,25 @@ $exercises = [
           </div>
           <div class="more">
             <?php
-            foreach ($exercise[3] as $item) {
+            if ($exercise[2]) {
+              foreach ($exercise[3] as $item) {
+            ?>
+                <div class="links">
+
+                  <a target="_blank" class="link" href="https://github.com/mazin-majdy/phpExercises/blob/master/<?= $exercise[2] ?>/<?= $item ?>"><?= $item ?></a>
+                  <a target="_blank" class="link" href="<?= $exercise[2] ?>/<?= $item ?>">Output</a>
+                </div>
+
+              <?php } ?>
+            <?php
+            } else {
             ?>
               <div class="links">
-                <a target="_blank" class="link" href="https://github.com/mazin-majdy/phpExercises/blob/master/<?= $exercise[2] ?>/<?= $item ?>"><?= $item ?></a>
-                <a target="_blank" class="link" href="<?= $exercise[2] ?>/<?= $item ?>">Output</a>
+                <a target="_blank" class="link" href="https://github.com/mazin-majdy/gsg-classroom/tree/master/database/migrations">Migration Files</a>
               </div>
-
-              <!-- <hr> -->
-            <?php } ?>
+            <?php
+            }
+            ?>
           </div>
         </div>
       <?php } ?>
@@ -88,9 +99,9 @@ $exercises = [
   </div>
   <footer>
     <p>&copy; All CopyRight Reserved <?= date('Y') ?> Mazin Almaswaby
-    <a target="_blank" href="https://www.facebook.com/mazen.almaswaby"><i class="fab fa-facebook"></i>&nbsp;</a>
-    <a target="_blank" href="https://www.instagram.com/mazin_majdy/"><i class="fab fa-instagram"></i>&nbsp;</a>
-    <a target="_blank" href="https://github.com/mazin-majdy"><i class="fab fa-github"></i></a>
+      <a target="_blank" href="https://www.facebook.com/mazen.almaswaby"><i class="fab fa-facebook"></i>&nbsp;</a>
+      <a target="_blank" href="https://www.instagram.com/mazin_majdy/"><i class="fab fa-instagram"></i>&nbsp;</a>
+      <a target="_blank" href="https://github.com/mazin-majdy"><i class="fab fa-github"></i></a>
     </p>
   </footer>
   <script src="./public/js/main.js"></script>
